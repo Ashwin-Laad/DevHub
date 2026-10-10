@@ -1,0 +1,21 @@
+{
+  "name": "devhub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DevHub — a developer collaboration and project management platform",
+  "type": "module",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev -w client",
+    "dev:server": "npm run dev -w server",
+    "start:client": "npm run start -w client",
+    "start:server": "npm run start -w server",
+    "start": "npm run start --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
