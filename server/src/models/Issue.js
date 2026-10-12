@@ -30,6 +30,10 @@ const issueSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
     },
+    labels: [{
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Label',
+    }],
     status: {
       type: String,
       enum: ISSUE_STATUSES,

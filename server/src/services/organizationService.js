@@ -60,6 +60,8 @@ export async function createOrganization(userId, { name }) {
 }
 
 export async function listMyOrganizations(userId) {
+  //here requireUserId checks for the presence and validity of the user ID, ensuring the user is authenticated.
+  
   await requireUserId(userId);
 
   const memberships = await Membership.find({ user: userId }).select('organization');

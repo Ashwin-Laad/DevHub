@@ -11,8 +11,12 @@
     "start": "vite"
   },
   "dependencies": {
+    "@apollo/client": "^4.3.3",
+    "graphql": "^16.14.2",
+    "lucide-react": "^1.55.0",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^6.1.1",
